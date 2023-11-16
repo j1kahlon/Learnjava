@@ -2,7 +2,7 @@ package amusementPark;
 
 public class AmusementParkRides {
 	int height;
-
+	
 	void ridesAllowed() {
 		
 		if (height >= 90 && height <= 200)
