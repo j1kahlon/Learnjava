@@ -10,7 +10,7 @@ public class WaterTankFilling {
 
 		int tankCapacity = 100;
 		int bucketCAPACITY = 10;
-
+		int breakpoint = 90;
 		int currentWaterLevel = 0;
 		{
 
@@ -23,14 +23,19 @@ public class WaterTankFilling {
 				if (currentWaterLevel <= tankCapacity) {
 					currentWaterLevel += bucketCAPACITY;
 					System.out.println("Water level: " + currentWaterLevel + " litres");
+				}
+				if (breakpoint == currentWaterLevel) {
+					System.out.println("WaterTank will be overflow,the current level of water in tank is :"
+							+ currentWaterLevel + " litres");
 
+					break;
 				}
 			}
-		}
-
-		System.out.println("Tank is full. Stop the filling process.");
-		{
 
 		}
+	}
+
+	{
+
 	}
 }
